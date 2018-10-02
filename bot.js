@@ -62,6 +62,12 @@ client.on('ready',async () => {
   }
 });
 
+        client.on('ready', () => {
+            client.user.setActivity("Panda Army | BrodCast .",{type: 'Playing'});
+       
+       });
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`Panda Army | BrodCast .`,"http://twitch.tv/S-F")
